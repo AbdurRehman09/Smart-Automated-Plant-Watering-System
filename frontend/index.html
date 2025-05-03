@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Plant Watering System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Plant Watering System</h1>
+        
+        <div class="status-card">
+            <h2>Plant Status</h2>
+            <div class="status-item">
+                <span class="label">Moisture Level:</span>
+                <span id="moisture-level" class="value">--</span>
+            </div>
+            <div class="status-item">
+                <span class="label">Pump Status:</span>
+                <span id="pump-status" class="value">--</span>
+            </div>
+            <div class="status-item">
+                <span class="label">AI Suggestion:</span>
+                <span id="ai-suggestion" class="value">--</span>
+            </div>
+        </div>
+
+        <div class="control-card">
+            <h2>Manual Control</h2>
+            <button id="toggle-pump" class="control-button">Turn Pump ON</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html> 
